@@ -1,9 +1,7 @@
-const delay = (callback, ms) => {
+export const delay = (callback: Function, ms: number) => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(callback())
         }, ms)
     })
 }
-
-module.exports = delay;
